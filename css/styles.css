@@ -101,16 +101,8 @@ a {
 }
 
 .social {
-  display: inline;
-  margin: 0 30px;
-}
-.links {
-  padding: 5px 20px;
   display: flex;
-  width: 100%;
-  height: 10%;
-  position: relative;
-  top: -30px;
+  margin: 10px 30px;
 }
 
 .name {
@@ -128,7 +120,7 @@ a {
 }
 .photo {
   width: 14rem;
-  height: 18rem;
+  height: 17rem;
   display: block;
   align-self: center;
   background: url("../images/pic.jpg");
@@ -139,6 +131,7 @@ a {
   left: 27%;
   right: 18%;
   box-shadow: 0 0 8px 8px rgb(54, 54, 54) inset;
+  border-radius: 50px;
 }
 .photo:hover {
   animation: effect 6s 0.3s infinite;
@@ -160,6 +153,18 @@ a {
   font-style: normal;
 }
 
+.button {
+  width: 70px;
+  height: 20px;
+  display: block;
+  background: linear-gradient(to right, rgb(3, 89, 139), rgb(127, 190, 229));
+  color: white;
+  font: bold 10px;
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 10px;
+}
 /*
 @keyframes touch {
   0% {
