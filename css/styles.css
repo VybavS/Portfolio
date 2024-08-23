@@ -5,14 +5,18 @@
 }
 body {
   min-height: 100vh;
-  min-width: 100vw;
+  max-width: 100vw;
   display: flex;
+  margin-left: 25vw;
 }
 .pallete {
-  width: 25%;
+  width: 25vw;
+  height: 100%;
+  left: 0;
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: fixed;
+  overflow: hidden;
   background: linear-gradient(
     to bottom right,
     rgb(44, 44, 44),
@@ -45,7 +49,7 @@ a {
   width: 100%;
 }
 .bio {
-  width: 75%;
+  width: 75vw;
   display: flex;
   position: relative;
   background-image: linear-gradient(
@@ -92,7 +96,8 @@ a {
   position: relative;
   padding: 20px 0 20px 20px;
   opacity: 0;
-  transition: opacity 5s;
+  transition: opacity;
+  transition-duration: 10s;
   transition-timing-function: ease-out;
   height: 65%;
   margin: 40px 0;
