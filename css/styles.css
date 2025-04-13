@@ -56,7 +56,7 @@ a {
 .fixed_img {
   height: 3rem;
   width: 6rem;
-  background: url("/images/hoverr.png");
+  background: url("../images/hoverr.png");
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 40%;
@@ -67,7 +67,7 @@ a {
   margin-top: 1%;
   height: 3rem;
   width: 6rem;
-  background: url("/images/hover.gif");
+  background: url("../images/hover.gif");
   background-repeat: no-repeat;
   background-size: contain;
 }
