@@ -7,6 +7,9 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="pragma" content="no-cache" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/sides.css" />
     <link
       rel="icon"
@@ -46,7 +49,9 @@
     />
   </head>
   <body>
-    <div class="pallete">
+    <div class="container-fluid text-center">
+      <div class="row">
+    <div class="col-sm-3 pallete">
       <a href="./index.html"><span>About</span></a>
       <a href="workex.html"><span>Work Experience</span></a
       ><a href="academics.html"><span>Academics</span></a
@@ -55,24 +60,28 @@
       ><a href="projects.html"><span>Projects</span></a
       ><a href="certificates.html"><span>Certifications</span></a>
     </div>
-    <div class="skills">
-      <div class="skillspot">
-        <h3>Front-End</h3>
-        <br />
-        <ul class="responsibilities">
-          <li class="bold-line">HTML 5</li>
-          <br />
-          <li class="bold-line">CSS 3</li>
-          <br />
-          <li class="bold-line">Tailwind CSS</li>
-          <br />
-          <li class="bold-line">Javascript</li>
-        </ul>
+    <div class="col-sm-9 skills card-group">
+    <div class="card skillspot">
+      <div class="card-body">
+        <h5 class="card-title">Front-End</h5>
+        <p class="card-text">
+          <ul class="responsibilities">
+            <li class="bold-line">HTML 5</li>
+            <br />
+            <li class="bold-line">CSS 3</li>
+            <br />
+            <li class="bold-line">Bootsrap</li>
+            <br />
+            <li class="bold-line">Javascript</li>
+          </ul>
+        </p>
       </div>
-      <div class="skillspot">
-        <h3>Back-End</h3>
-        <br />
-        <ul class="responsibilities">
+    </div>
+    <div class="card skillspot">
+      <div class="card-body">
+        <h5 class="card-title">Back-End</h5>
+        <p class="card-text">
+          <ul class="responsibilities">
           <li class="bold-line">Python</li>
           <br />
           <li class="bold-line">Java</li>
@@ -85,12 +94,17 @@
           <br />
           <li class="bold-line">NextJS</li>
         </ul>
+        </p>
       </div>
-      <div class="skillspot">
-        <h3>Version control & Miscellaneous</h3>
-        <br />
-        <ul class="responsibilities">
+    </div>
+    <div class="card skillspot">
+      <div class="card-body">
+        <h5 class="card-title">Version control & Miscellaneous</h5>
+        <p class="card-text">
+          <ul class="responsibilities">
           <li class="bold-line">Kubernetes</li>
+          <br />
+          <li class="bold-line">Docker</li>
           <br />
           <li class="bold-line">Git</li>
           <br />
@@ -100,7 +114,11 @@
           <br />
           <li class="bold-line">Power BI</li>
         </ul>
+        </p>
       </div>
+    </div>
+    </div>
+    </div>
     </div>
   </body>
 </html>
