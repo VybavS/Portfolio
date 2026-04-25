@@ -95,14 +95,18 @@ body::after {
   height: 100vh;
   overflow-y: auto;
   z-index: 50;
-  flex: 0 0 270px;
-  max-width: 270px;
-  width: 270px;
 }
 
-.pallete + * {
-  flex: 1 1 0%;
-  max-width: none;
+@media (min-width: 576px) {
+  .pallete {
+    flex: 0 0 270px;
+    max-width: 270px;
+    width: 270px;
+  }
+  .pallete + * {
+    flex: 1 1 0%;
+    max-width: none;
+  }
 }
 
 .pallete::after {
@@ -628,15 +632,6 @@ ul.responsibilities a:hover {
     border-bottom: 1px solid var(--border);
     padding: 0;
     -webkit-overflow-scrolling: touch;
-    flex: 0 0 100%;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .pallete + * {
-    flex: 0 0 100%;
-    max-width: 100%;
-    width: 100%;
   }
 
   .pallete::after {
