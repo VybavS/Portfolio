@@ -311,6 +311,30 @@ span.nav-item::before {
   color: var(--text-primary);
 }
 
+.js-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background: #f7df1e;
+  color: #000;
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
+  font-weight: 700;
+  border-radius: 2px;
+  flex-shrink: 0;
+  letter-spacing: -0.02em;
+}
+
+.k8s-icon {
+  font-size: 1.5em;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  transform: scale(1.15);
+}
+
 .hero-actions {
   display: flex;
   gap: 0.875rem;
@@ -545,16 +569,30 @@ span.nav-item::before {
 /* ── Responsive ────────────────────────────────── */
 @media (max-width: 575px) {
   .pallete {
-    position: sticky;
+    position: fixed !important;
     top: 0;
-    height: auto;
-    min-height: unset;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+    height: auto !important;
+    min-height: unset !important;
     flex-direction: row;
     overflow-x: auto;
+    overflow-y: hidden;
     border-right: none;
     border-bottom: 1px solid var(--border);
     padding: 0;
+    z-index: 999;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .pallete + * {
+    padding-top: 44px;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
   }
 
   .pallete::after {
