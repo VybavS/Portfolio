@@ -95,14 +95,14 @@ body::after {
   height: 100vh;
   overflow-y: auto;
   z-index: 50;
-  flex: 0 0 270px !important;
-  max-width: 270px !important;
-  width: 270px !important;
+  flex: 0 0 270px;
+  max-width: 270px;
+  width: 270px;
 }
 
 .pallete + * {
-  flex: 1 1 0% !important;
-  max-width: none !important;
+  flex: 1 1 0%;
+  max-width: none;
 }
 
 .pallete::after {
@@ -618,30 +618,25 @@ ul.responsibilities a:hover {
 /* ── Responsive ────────────────────────────────── */
 @media (max-width: 575px) {
   .pallete {
-    position: fixed !important;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
-    width: 100% !important;
-    max-width: 100% !important;
-    flex: none !important;
-    height: auto !important;
-    min-height: unset !important;
+    height: auto;
+    min-height: unset;
     flex-direction: row;
     overflow-x: auto;
-    overflow-y: hidden;
     border-right: none;
     border-bottom: 1px solid var(--border);
     padding: 0;
-    z-index: 999;
     -webkit-overflow-scrolling: touch;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
   }
 
   .pallete + * {
-    padding-top: 44px;
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    width: 100% !important;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
   }
 
   .pallete::after {
